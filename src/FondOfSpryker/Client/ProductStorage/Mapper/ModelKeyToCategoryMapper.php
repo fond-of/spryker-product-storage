@@ -2,6 +2,11 @@
 
 namespace FondOfSpryker\Client\ProductStorage\Mapper;
 
+/**
+ * Class ModelKeyToCategoryMapper
+ * @deprecated mapping will be done in frontend
+ * @package FondOfSpryker\Client\ProductStorage\Mapper
+ */
 class ModelKeyToCategoryMapper
 {
     public const SMALL_FRIENDS = 'small-friend';
@@ -51,6 +56,11 @@ class ModelKeyToCategoryMapper
         self::DRINKING_BOTTLE_STAINLESS_STEEL => self::DRINKING_BOTTLE_STAINLESS_STEEL_ID,
     ];
 
+    /**
+     * @deprecated mapping will be done in frontend
+     * @param string $categoryKey
+     * @return int|null
+     */
     public function mapKeyToCategory(string $categoryKey): ?int
     {
         if (!isset($this->categoriesMapping[$categoryKey])) {

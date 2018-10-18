@@ -7,6 +7,7 @@ use Spryker\Client\Kernel\AbstractPlugin;
 use Spryker\Client\ProductStorageExtension\Dependency\Plugin\ProductViewExpanderPluginInterface;
 
 /**
+ * @deprecated mapping will be done in frontend
  * @method \FondOfSpryker\Client\ProductStorage\ProductStorageFactory getFactory()
  */
 class ProductViewCategoryExpander extends AbstractPlugin implements ProductViewExpanderPluginInterface
@@ -34,10 +35,6 @@ class ProductViewCategoryExpander extends AbstractPlugin implements ProductViewE
             ->mapKeyToCategory($productViewTransfer->getModelKey());
 
         $productViewTransfer->setCategoryNodeId($categoryNodeId);
-
-        /*$this->getFactory()
-            ->getProductCategoryStorageClient()
-            ->findProductAbstractCategory($productViewTransfer->getCategoryNodeId(), 'en_US');*/
 
         return $productViewTransfer;
     }

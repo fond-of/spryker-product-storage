@@ -8,7 +8,7 @@ use Spryker\Client\ProductStorage\ProductStorageDependencyProvider as SprykerPro
 
 class ProductStorageDependencyProvider extends SprykerProductStorageDependencyProvider
 {
-    const CATEGORY_STORAGE_CLIENT = 'CATEGORY_STORAGE_CLIENT';
+    public const CATEGORY_STORAGE_CLIENT = 'CATEGORY_STORAGE_CLIENT';
 
     protected function addCategoryStorageClient(Container $container)
     {

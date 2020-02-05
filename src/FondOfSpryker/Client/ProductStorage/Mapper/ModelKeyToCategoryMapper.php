@@ -4,6 +4,7 @@ namespace FondOfSpryker\Client\ProductStorage\Mapper;
 
 /**
  * Class ModelKeyToCategoryMapper
+ *
  * @deprecated mapping will be done in frontend
  * @package FondOfSpryker\Client\ProductStorage\Mapper
  */
@@ -58,7 +59,9 @@ class ModelKeyToCategoryMapper
 
     /**
      * @deprecated mapping will be done in frontend
+     *
      * @param string $categoryKey
+     *
      * @return int|null
      */
     public function mapKeyToCategory(string $categoryKey): ?int
